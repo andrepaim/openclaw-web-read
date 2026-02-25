@@ -8,10 +8,9 @@ description: "Fetch readable content from any URL including JavaScript-rendered 
 Run the bundled script:
 
 ```bash
-python3 <skill_dir>/scripts/fetch.py "<URL>" [timeout_seconds]
+SCRIPT="skills/web-read/scripts/fetch.py"
+python3 $SCRIPT "<URL>" [timeout_seconds]
 ```
-
-`<skill_dir>` is the absolute path to this skill's directory (e.g. `~/.openclaw/workspace/skills/web-read`).
 
 Default timeout: 20s. Increase to 30 for slow SPAs.
 
